@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script>
+        /* XML Request */
+        let xhr = new XMLHttpRequest;
+        xhr.open("GET", "http://strainapi.evanbusse.com/bEgwHTh/strains/search/flavor/Spicy", false);
+        xhr.send();
+        let newObject = JSON.parse(xhr.responseText);
+        console.log(newObject);
+
+    </script>
+</head>
+
+
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strains API</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Application JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Indie Flower', cursive;
+        }
+    </style>
+
+</head>
+
+<body onload="initPage();">
+    <div class="background">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" onclick="location.reload()">Strains</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" onclick="about();">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" onclick="strainTypes();">Strain Type</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="showFlavors();">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="showEffects();">Mood Effects</a>
+                    </li>
+                </ul>
+                <input id="search" onchange="getSearch();" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button onclick="getSearch();" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+
+        </nav>
+
+        <h1>Strains API</h1>
+        <h3>Which Strain Are You Looking For?</h3>
+        <div class="input-group mb-3 search">
+            <input id="searchTwo" type="text" class="form-control" onchange="getSearchTwo();" placeholder="Enter Stuff Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="button" onclick="getSearchTwo();">Search</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <section id="id-card-body" display="none";>
+                    <p id="id-name"></p>
+                    <p id="id-strain"></p>
+                </section>
+            </div>
+            <div class="row">
+                <p class="info" id="desc" style="display: none;"></p>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img id="posImg" src="images/positive.svg" style="display: none;">
+                    <ul id="positive" style="display: none;"></ul>
+                </div>
+                <div class="col-sm-3">
+                    <img id="medImg" src="images/medical.svg" style="display: none;">
+                    <ul id="medical" style="display: none;"></ul>
+                </div>
+                <div class="col-sm-3">
+                    <img id="negImg" src="images/negative.svg" style="display: none;">
+                    <ul id="negative" style="display: none;"></ul>
+                </div>
+                <div class="col-sm-3">
+                    <img id="flaImg" src="images/flavor.svg" style="display: none;">
+                    <ul id="flavors" style="display: none;"></ul>
+                </div>
+            </div>
+        </div>
+        <h3>Indica Strains</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+            </div>
+        </div>
+        <h3>Sativa Strains</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+            </div>
+        </div>
+        <h3>Mood Effects</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+                <div class="col-sm-3 strain">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="sugBox" class="row">
+                <ul id="suggestions" class="info" style="display: none;"></ul>
+            </div>
+        </div>
+        <footer>
+    <p class="footer-text"><a href="http://strains.evanbusse.com/">The Strain API</a></p>
+  
+</footer>
+    </div>
+</body>
+
+</html>

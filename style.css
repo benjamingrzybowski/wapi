@@ -1,0 +1,261 @@
+body,
+html {
+    height: 100%;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+}
+
+.background {
+    background-image: url();
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.background h3 {
+    font-size: 18px;
+    padding: 3%;
+    margin: 10%;
+}
+
+h1 {
+    background-color: #E9C990;
+    text-align: center;
+    opacity: 0.87;
+}
+
+h3 {
+    background-color: #E9C990;
+    text-align: center;
+    opacity: 0.87;
+    margin: 15%;
+}
+
+.search {
+    padding: 4%;
+}
+
+.indicaList,
+.sativaList,
+.hybridList {
+    padding: 2%;
+    line-height: 1.2;
+}
+
+.indicaList li,
+.sativaList li,
+.hybridList li {
+    list-style: none;
+    padding: 1%;
+}
+
+.indicaList {
+    background-color: rgba(255, 255, 0, .7);
+}
+
+.sativaList {
+    background-color: rgba(255, 0, 0, .7);
+}
+
+.hybridList {
+    background-color: rgba(255, 150, 2, .7);
+}
+
+.input-group button {
+    border-radius: 50px;
+    background-color: green;
+    color: black;
+}
+
+.input-group .form-control {
+    border-radius: 50px;
+}
+
+.strain {
+    background-color: rgba(128, 0, 128, .7);
+    padding-top: 5%;
+    color: white;
+    text-align: center;
+}
+
+.strain {
+    height: 90px;
+    border-radius: 20px;
+}
+
+#positive {
+    padding: 5%;
+    margin: 5%;
+}
+
+#negative {
+    padding: 10%;
+    margin: 5%;
+}
+
+#medical {
+    padding: 5%;
+    margin: 5%;
+}
+
+#flavors {
+    padding: 5%;
+    margin: 5%;
+}
+
+#id-card-body {
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+#desc {
+    background-color: #E9C990;
+    opacity: 0.87;
+    padding: 5%;
+    margin: 2%;
+}
+
+#positive,
+#medical,
+#negative,
+#flavors {
+    background-color: #E9C990;
+    opacity: 0.87;
+}
+
+.info {
+    background-color: #E9C990;
+    opacity: 0.77;
+    padding: 5%;
+    margin: 5%;
+}
+
+.col-sm-3 {
+    margin: 5px;
+}
+
+#posImg,
+#negImg,
+#medImg,
+#flaImg {
+    width: 35%;
+    margin: 0 auto;
+}
+
+#posImg,
+#negImg,
+#medImg,
+#flaImg {
+    width: 35%;
+    margin: 0 auto;
+}
+
+p a {
+    color: green;
+}
+
+footer {
+    background-color: #E9C990;
+    opacity: .87;
+    bottom: 0;
+    height: 75px;
+    width: 100%;
+}
+
+.footer-text {
+    text-align: center;
+    padding-top: 8%
+}
+
+@media (min-width:801px) {
+    /* tablet, landscape iPad, lo-res laptops ands desktops, IPAD PRO */
+    body,
+    html {
+        height: 100%;
+    }
+    .background {
+        background-image: url(/images/bg.jpg);
+        /* Full height */
+        height: 100%;
+        /* Centers and scales the image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .background h3 {
+        font-size: 30px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .col-sm-3 {
+        margin: 0 auto;
+    }
+    .col-sm-4 {
+        background-color: purple;
+        padding-top: 5%;
+    }
+    .col-sm-4 {
+        height: 150px;
+        width: 28%;
+        margin: 1%;
+    }
+    #search {
+        width: 50%;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        margin-top: 8%;
+        height: 100px;
+    }
+}
+
+@media (min-width:1025px) {
+    /* big landscape tablets, laptops, and desktops */
+    body,
+    html {
+        height: 100%;
+    }
+    .background {
+        background-image: url("bg.jpg");
+        /* Full height */
+        height: 100%;
+        /* Centers and scales the image */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .background h3 {
+        font-size: 45px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .col-sm-4 {
+        background-color: green;
+    }
+    #search {
+        width: 40%;
+    }
+    .info {
+        font-size: 30px;
+    }
+    #search {
+        width: 40%;
+    }
+    .info {
+        font-size: 30px;
+    }
+    footer {
+        bottom: 0;
+        height: 200px;
+        margin-top: 10%;
+    }
+}

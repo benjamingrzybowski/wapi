@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strains API</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Application JS -->
+    <script src="js/script.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Indie Flower', cursive;
+        }
+    </style>
+
+</head>
+
+<body onload="initPage();">
+    <div class="background">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Strains</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" onclick="about.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Strain Type</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="showFlavors();">Flavors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="showEffects();">Mood Effects</a>
+                    </li>
+                </ul>
+
+
+                <input id="search" onchange="getSearch();" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button onclick="getSearch();" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+
+        </nav>
+
+        <h1>About</h1>
+        <h3>What is Strains?</h3>
+        <p class="info">
+            Strains is a site where you can find more information about a cannabis strain. We have different categories where you can explore different strains. You can search by strain type (Sativa, Indica, Hybrid), flavor, and mood effects!
+        </p>
+        <p class="info">This site was created for a school project. We created this site because we were introduced to API's in our class, "Emerging Web Tools and Trends". </p>
+        
+        <p class="info">We used used <a href="http://strains.evanbusse.com/">The Strain API</a> to create this site. </p>
+        <h3>Who created Strains?</h3>
+        <p class="info">This site was created by four students from Portland Community College. </p>
+        <ul class="info">
+            <li>Project Lead and Javascript: Ben Grzybowski</li>
+            <li>Operations and Graphics: Izabela Wiechowska</li>
+            <li>UX/UI and HTML/CSS: Tiana Le</li>
+            <li>Javascript: Jared Martinez</li>
+        </ul>
+
+<footer>
+    <p style="text-align: center"><a href="http://strains.evanbusse.com/">The Strain API</a></p>
+
+   
+</footer>
+    </div>
+
+
+
+</body>
+
+</html>
